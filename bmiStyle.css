@@ -1,0 +1,8 @@
+input.error {
+    background-color: gray;
+}
+label.error {
+    color: crimson;
+    font-size: smaller;
+    background-color: black;
+}
