@@ -24,7 +24,7 @@ var myRules = {
         function calcBmi()
 {
     var calcweight = $("#pounds").val();
- var calcheight = $("#height").val(;)
+ var calcheight = $("#height").val();
 var bmiHeight = calcheight * calcheight;
 var bmi = calcweight/bmiHeight * 703; }
     }
