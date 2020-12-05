@@ -26,8 +26,7 @@ var myRules = {
     var calcweight = $("#pounds").val();
  var calcheight = $("#height").val();
 var bmiHeight = calcheight * calcheight;
-var bmi = calcweight/bmiHeight * 703; }
-    }
+var bmiFinal = calcweight/bmiHeight * 703; }
+    })
     //dislpay BMI
-    $(#bmiOutput).text(bmi.toFixed(1));
-)
+    $(#bmiOutput).text(bmiFinal.toFixed(1));
