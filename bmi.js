@@ -1,4 +1,4 @@
-$(document).ready(
+let ready = $(document).ready(
     function () {
 
 //add event handlers
@@ -27,6 +27,6 @@ var myRules = {
  var calcheight = $("#height").val();
 var bmiHeight = calcheight * calcheight;
 var bmiFinal = calcweight/bmiHeight * 703; }
-    })
+    });
     //dislpay BMI
     $(#bmiOutput).text(bmiFinal.toFixed(1));
