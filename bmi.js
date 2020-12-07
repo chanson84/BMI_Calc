@@ -20,14 +20,15 @@ var myRules = {
         $("form").validate({submitHandler: calcBmi,
         rules:myRules,
         messages:myMessages});
+
+    })
+
 //calculate BMI
-        function calcBmi()
+function calcBmi()
 {
     var calcweight = $("#pounds").val();
- var calcheight = $("#height").val();
-var bmiHeight = calcheight * calcheight;
-    var bmiFinal = calcweight/bmiHeight * 703;}
-    })
-    //dislpay BMI
+    var calcheight = $("#height").val();
+    var bmiHeight = calcheight * calcheight;//dislpay BMI
+        var bmiFinal = calcweight/bmiHeight * 703;
+        $("#bmiOutput").text(bmiFinal.toFixed(1));}
 
-$("#bmiOutput").text(bmiFinal.toFixed(1));
