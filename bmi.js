@@ -28,7 +28,8 @@ function calcBmi()
 {
     var calcweight = $("#pounds").val();
     var calcheight = $("#height").val();
-    var bmiHeight = calcheight * calcheight;//dislpay BMI
+    var bmiHeight = calcheight * calcheight;
+    //dislpay BMI
         var bmiFinal = calcweight/bmiHeight * 703;
         $("#bmiOutput").text(bmiFinal.toFixed(1));}
 
